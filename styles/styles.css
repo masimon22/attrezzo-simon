@@ -97,9 +97,12 @@ main div{
 }
 
 .titulo{
-    color: rgb(67, 65, 65);
-    font-size: 40px;
+    color: rgb(103, 102, 102);
+    font-size: 03rem;
        
+}
+.principal__titulo{
+    background-image: linear-gradient(to right, rgb(248, 248, 236), rgb(157, 157, 155));
 }
 
 .textoPrincipal{
