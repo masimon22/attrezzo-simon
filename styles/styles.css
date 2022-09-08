@@ -54,8 +54,14 @@ main{
 }
 .cabecera__li{
     color: black;
-    
+    transition: 0.3s;    
 }
+
+.cabecera__li:hover{
+    color:#ea5e5e;
+
+}
+
 footer{
     display: flex;
     flex-direction: column;
