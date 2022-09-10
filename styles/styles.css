@@ -57,10 +57,10 @@ main{
     transition: 0.3s;    
 }
 
-.cabecera__li:hover{
+/* .cabecera__li:hover{
     color:#ea5e5e;
 
-}
+} */
 
 footer{
     display: flex;
