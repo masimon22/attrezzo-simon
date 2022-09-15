@@ -1,0 +1,27 @@
+.encabezado{
+    display: flex;
+    background-color: rgb(241, 248, 246);
+    justify-content: center;
+    .encabezado__imagen{
+        display: flex;
+        width: 60%;
+    }
+}
+
+.tarjetas{
+    display: flex;
+    justify-content: center;
+    .tarjetas__attrezzo{
+        display: flex;
+        background-color: rgb(241, 248, 246);
+    }
+}
+
+.fotos{
+    display: flex;
+    border: 1px solid;
+    margin-bottom: 10px;
+}
+.boton_form{
+    background-color: rgb(172, 174, 173);
+}

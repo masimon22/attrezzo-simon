@@ -1,0 +1,17 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    .logo{
+        display: flex;
+        width: 75%;
+    }
+    .navegador__links{
+        transition: 0.3s;
+        &:hover{
+            color: #ea5e5e;
+        }
+    }
+}
+
+
+
