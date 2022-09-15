@@ -1,76 +1,69 @@
-*{
-    box-sizing: border-box;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    list-style: none;
+.encabezado {
+  display: flex;
+  background-color: rgb(241, 248, 246);
+  justify-content: center;
+}
+.encabezado .encabezado__imagen {
+  display: flex;
+  width: 60%;
 }
 
-.logo{
-    display: flex;
-    width: 75%;
-    
+.tarjetas {
+  display: flex;
+  justify-content: center;
 }
-.header{
-    display: flex;
-    justify-content: space-around;
-
-}
-.navegador__links{
-    transition: 0.3s;
-    
+.tarjetas .tarjetas__attrezzo {
+  display: flex;
+  background-color: rgb(241, 248, 246);
 }
 
-.navegador__links:hover{
-    color: #ea5e5e;
+.fotos {
+  display: flex;
+  border: 1px solid;
+  margin-bottom: 10px;
 }
 
-footer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-        
-}
-.footer__ul{
-   display: flex;
-    padding: 0;
-    justify-content: space-around;
-    width: 150px;
+.boton_form {
+  background-color: rgb(172, 174, 173);
 }
 
-.footer__span{
-    font-style: italic;
-    font-size: 20px;
+.header {
+  display: flex;
+  justify-content: space-around;
 }
-.footer__creador{
-    display: flex;
-    margin: 0;
-    
+.header .logo {
+  display: flex;
+  width: 75%;
 }
-.encabezado{
-    display: flex;
-    background-color: rgb(241, 248, 246);
-    justify-content: center;
+.header .navegador__links {
+  transition: 0.3s;
 }
-
-.encabezado__imagen{
-    display: flex;
-    width: 60%;
+.header .navegador__links:hover {
+  color: #ea5e5e;
 }
 
-.tarjetas{
-    display: flex;
-    justify-content: center;
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.tarjetas__attrezzo{
-    display: flex;
-    background-color: rgb(241, 248, 246);
+footer .footer__ul {
+  display: flex;
+  padding: 0;
+  justify-content: space-around;
+  width: 150px;
+}
+footer .footer__span {
+  font-style: italic;
+  font-size: 20px;
+}
+footer .footer__creador {
+  display: flex;
+  margin: 0;
 }
 
-.fotos{
-    display: flex;
-    border: 1px solid;
-    margin-bottom: 10px;
-}
-.boton_form{
-    background-color: rgb(172, 174, 173);
-}
-
+* {
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  list-style: none;
+}/*# sourceMappingURL=styles.css.map */
