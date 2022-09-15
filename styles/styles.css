@@ -23,8 +23,16 @@
   margin-bottom: 10px;
 }
 
-.boton_form {
-  background-color: rgb(172, 174, 173);
+.principal__texto {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+.principal__texto .principal__titulo {
+  font-size: 2.5em;
+}
+.principal__texto .principal__parrafo {
+  font-size: 1.5em;
 }
 
 .header {
@@ -60,6 +68,33 @@ footer .footer__span {
 footer .footer__creador {
   display: flex;
   margin: 0;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacto .contacto__div h3 {
+  font-size: 1.5em;
+}
+.contacto form {
+  display: flex;
+  margin: 2rem;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: rgb(246, 250, 249);
+  width: 80%;
+}
+.contacto form .form-tipo {
+  font-size: 1em;
+  text-decoration: underline;
+}
+
+.boton_form {
+  background-color: rgb(75, 75, 241);
 }
 
 * {
