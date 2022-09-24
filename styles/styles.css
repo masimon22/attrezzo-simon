@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  list-style: none;
+}
+
 .encabezado {
   display: flex;
   background-image: linear-gradient(to right, rgb(241, 248, 246), rgb(196, 212, 207));
@@ -11,6 +17,10 @@
 .tarjetas {
   display: flex;
   justify-content: center;
+}
+.tarjetas .tarjetas-arq {
+  display: flex;
+  margin-bottom: 10px;
 }
 .tarjetas .tarjetas__attrezzo {
   display: flex;
@@ -95,10 +105,4 @@ footer .footer__creador {
 
 .boton_form {
   background-color: rgb(75, 75, 241);
-}
-
-* {
-  box-sizing: border-box;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  list-style: none;
 }/*# sourceMappingURL=styles.css.map */

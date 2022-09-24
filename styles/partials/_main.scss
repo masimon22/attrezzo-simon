@@ -14,9 +14,14 @@
 .tarjetas{
     display: flex;
     justify-content: center;
+    .tarjetas-arq{
+        display: flex;
+        margin-bottom: 10px;
+    }
     .tarjetas__attrezzo{
         display: flex;
         background-color: rgb(241, 248, 246);
+        
     }
 }
 
