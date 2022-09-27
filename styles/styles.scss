@@ -1,9 +1,12 @@
 @import "./partials/maps";
 @import "./partials/variants";
+@import "./partials/extends";
+@import "./partials/mixins";
 @import "./partials/main";
 @import "./partials/header";
 @import "./partials/footer";
 @import "./partials/formulario";
+
 
 *{
     margin: 0;

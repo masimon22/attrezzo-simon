@@ -1,3 +1,8 @@
+.yoga, .fotos {
+  display: flex;
+  margin-bottom: 10px;
+}
+
 .encabezado {
   display: flex;
   background-image: linear-gradient(to right, rgb(241, 248, 246), rgb(196, 212, 207));
@@ -22,9 +27,12 @@
 }
 
 .fotos {
-  display: flex;
   border: 1px solid;
-  margin-bottom: 10px;
+}
+
+.yoga {
+  border-radius: 5px;
+  border: 1px solid rgb(43, 18, 232);
 }
 
 .principal__texto {
@@ -113,7 +121,15 @@ footer .footer__creador {
 }
 
 .boton_form {
-  background-color: rgb(75, 75, 241);
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(85, 93, 248);
+  border-bottom: 3px solid blue;
+}
+.boton_form:hover {
+  background-color: rgb(33, 64, 217);
 }
 
 * {

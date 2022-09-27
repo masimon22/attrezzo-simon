@@ -25,5 +25,8 @@
 }
 
 .boton_form{
-    background-color: rgb(75, 75, 241);
+    @include boton($backColor: rgb(85, 93, 248), $border: 3px solid blue);
+    &:hover{
+        background-color: rgb(33, 64, 217);
+    }
 }

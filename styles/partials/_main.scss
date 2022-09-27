@@ -3,7 +3,7 @@
 
 .encabezado{
     display: flex;
-    background-image: linear-gradient(to right, rgb(241, 248, 246), rgb(196, 212, 207));
+    background-image: map-get($colores, colorEncabezado);
     justify-content: center;
     .encabezado__imagen{
         display: flex;
@@ -26,10 +26,16 @@
 }
 
 .fotos{
-    display: flex;
+    @extend %fotosDefault;
     border: 1px solid;
-    margin-bottom: 10px;
+    
 }
+.yoga{
+    @extend %fotosDefault;
+    border-radius: 5px;
+    border: 1px solid rgb(43, 18, 232);
+}
+
 .principal__texto{
     display: flex;
     flex-direction: column;
