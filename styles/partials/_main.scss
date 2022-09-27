@@ -1,6 +1,9 @@
+
+
+
 .encabezado{
     display: flex;
-    background-color: rgb(241, 248, 246);
+    background-image: linear-gradient(to right, rgb(241, 248, 246), rgb(196, 212, 207));
     justify-content: center;
     .encabezado__imagen{
         display: flex;
@@ -11,9 +14,14 @@
 .tarjetas{
     display: flex;
     justify-content: center;
+    .tarjetas-arq{
+        display: flex;
+        margin-bottom: 10px;
+    }
     .tarjetas__attrezzo{
         display: flex;
         background-color: rgb(241, 248, 246);
+        
     }
 }
 
@@ -22,6 +30,28 @@
     border: 1px solid;
     margin-bottom: 10px;
 }
-.boton_form{
-    background-color: rgb(172, 174, 173);
+.principal__texto{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    .principal__titulo{
+        font-size: $letra-grande;
+    }
+    .principal__parrafo{
+        font-size: $letra-mediana;
+    }
 }
+.parallax{
+    background-image: url("../imagenes/20200307_121903.jpg");
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media only screen and (max-device-width: 992px) {
+    .parallax {
+      display: none;
+    }
+  }

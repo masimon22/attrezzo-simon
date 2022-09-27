@@ -1,0 +1,29 @@
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .contacto__div h3{
+        font-size: $letra-mediana;
+        
+    }
+    form{
+        display: flex;
+        margin: 2rem;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid;
+        border-radius: 5px;
+        background-color: $color-de-fondo;
+        width: 80%;
+        .form-tipo{
+            font-size: $letra-chica;
+            text-decoration: underline;
+        }
+       
+    }
+    
+}
+
+.boton_form{
+    background-color: rgb(75, 75, 241);
+}

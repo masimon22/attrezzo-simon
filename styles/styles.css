@@ -1,6 +1,6 @@
 .encabezado {
   display: flex;
-  background-color: rgb(241, 248, 246);
+  background-image: linear-gradient(to right, rgb(241, 248, 246), rgb(196, 212, 207));
   justify-content: center;
 }
 .encabezado .encabezado__imagen {
@@ -11,6 +11,10 @@
 .tarjetas {
   display: flex;
   justify-content: center;
+}
+.tarjetas .tarjetas-arq {
+  display: flex;
+  margin-bottom: 10px;
 }
 .tarjetas .tarjetas__attrezzo {
   display: flex;
@@ -23,10 +27,33 @@
   margin-bottom: 10px;
 }
 
-.boton_form {
-  background-color: rgb(172, 174, 173);
+.principal__texto {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+}
+.principal__texto .principal__titulo {
+  font-size: 2.5em;
+}
+.principal__texto .principal__parrafo {
+  font-size: 1.5em;
 }
 
+.parallax {
+  background-image: url("../imagenes/20200307_121903.jpg");
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 992px) {
+  .parallax {
+    display: none;
+  }
+}
 .header {
   display: flex;
   justify-content: space-around;
@@ -62,7 +89,36 @@ footer .footer__creador {
   margin: 0;
 }
 
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacto .contacto__div h3 {
+  font-size: 1.5em;
+}
+.contacto form {
+  display: flex;
+  margin: 2rem;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: rgb(246, 250, 249);
+  width: 80%;
+}
+.contacto form .form-tipo {
+  font-size: 1em;
+  text-decoration: underline;
+}
+
+.boton_form {
+  background-color: rgb(75, 75, 241);
+}
+
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   list-style: none;
