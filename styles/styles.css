@@ -96,6 +96,9 @@ footer .footer__creador {
   display: flex;
   margin: 0;
 }
+footer .logo-redes:hover {
+  background-color: rgb(81, 79, 79);
+}
 
 .contacto {
   display: flex;
