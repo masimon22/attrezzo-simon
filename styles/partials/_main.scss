@@ -15,6 +15,7 @@
     .tarjetas-arq{
         display: flex;
         margin-bottom: 10px;
+        &:hover{opacity: 70%;}
     }
     .tarjetas__attrezzo{
         display: flex;
@@ -40,6 +41,7 @@
     margin-top: 1em;
     .principal__titulo{
         font-size: $letra-grande;
+        text-decoration: underline;
     }
     .principal__parrafo{
         font-size: $letra-mediana;
