@@ -55,7 +55,7 @@
   transform: scale(1.4);
 }
 .galeria .parallax, .galeria .parallax2 {
-  background-image: url("../imagenes/20200307_121903.jpg");
+  background-image: url("../imagenes/YOGA/Y3.jpg");
   height: 50vh;
   width: 100%;
   background-attachment: fixed;
@@ -64,7 +64,7 @@
   background-size: cover;
 }
 .galeria .parallax2 {
-  background-image: url("../imagenes/20201202_104104-01.jpg");
+  background-image: url("../imagenes/YOGA/Y5.jpg");
 }
 
 @media only screen and (max-device-width: 992px) {

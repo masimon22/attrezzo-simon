@@ -52,7 +52,7 @@
         transition: $transicion;
     }
     .parallax{
-        background-image: url("../imagenes/20200307_121903.jpg");
+        background-image: url("../imagenes/YOGA/Y3.jpg");
         height: 50vh;
         width: 100%;
         background-attachment: fixed;
@@ -62,7 +62,7 @@
     }
     .parallax2{
         @extend .parallax;
-        background-image: url("../imagenes/20201202_104104-01.jpg");
+        background-image: url("../imagenes/YOGA/Y5.jpg");
     
     }
 
