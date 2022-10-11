@@ -18,7 +18,8 @@ footer{
         
     }
     .logo-redes{
-        &:hover{background-color: rgb(81, 79, 79)}
+        &:hover{transform: scale(1.4);}
+        transition: $transicion;
     }
          
 }

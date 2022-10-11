@@ -12,6 +12,7 @@
 .tarjetas{
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
     .tarjetas-arq{
         display: flex;
         margin-bottom: 10px;
@@ -24,37 +25,47 @@
     }
 }
 
-.fotos{
-    @extend %fotosDefault;
-    border: 1px solid;
-    
-}
-.yoga{
-    @extend %fotosDefault;
-    border-radius: 5px;
-    border: 1px solid rgb(41, 17, 221);
-}
+
 
 .principal__texto{
     display: flex;
     flex-direction: column;
-    margin-top: 1em;
-    .principal__titulo{
-        font-size: $letra-grande;
-        text-decoration: underline;
-    }
+    margin-top: 2em;
     .principal__parrafo{
         font-size: $letra-mediana;
     }
 }
-.parallax{
-    background-image: url("../imagenes/20200307_121903.jpg");
-    height: 100vh;
-    width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.galeria{
+    #galeria-titulo{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 5rem;
+    }
+    .fotos{
+        @extend %fotosDefault;
+        border: 1px solid;
+        
+    }
+    .galeria-imagenes{
+        margin-top: 2rem;
+        &:hover{transform: scale(1.4);}
+        transition: $transicion;
+    }
+    .parallax{
+        background-image: url("../imagenes/20200307_121903.jpg");
+        height: 50vh;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .parallax2{
+        @extend .parallax;
+        background-image: url("../imagenes/20201202_104104-01.jpg");
+    
+    }
+
 }
 @media only screen and (max-device-width: 992px) {
     .parallax {
