@@ -30,9 +30,13 @@
 .principal__texto{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 2em;
+    
     .principal__parrafo{
         font-size: $letra-mediana;
+        width: 60vw;
     }
 }
 .galeria{
@@ -71,4 +75,5 @@
     .parallax {
       display: none;
     }
+   
   }

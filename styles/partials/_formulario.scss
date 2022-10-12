@@ -4,6 +4,7 @@
     align-items: center;
     .contacto__div h3{
         font-size: $letra-mediana;
+        width: 50vw;
         
     }
     form{
@@ -15,6 +16,9 @@
         border-radius: 5px;
         background-color: $color-de-fondo;
         width: 80%;
+        .form-imput{
+            width: 60vw;
+        }
         .form-tipo{
             font-size: $letra-chica;
             text-decoration: underline;
