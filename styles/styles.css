@@ -36,6 +36,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 2em;
+  gap: 1rem;
 }
 .principal__texto .principal__parrafo {
   font-size: 1.2rem;
