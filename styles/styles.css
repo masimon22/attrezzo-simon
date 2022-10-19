@@ -58,7 +58,7 @@
   transition: all 0.5s ease-in-out;
 }
 .galeria .galeria-imagenes:hover {
-  transform: scale(1.4);
+  transform: scale(1.1);
 }
 .galeria .parallax, .galeria .parallax2 {
   background-image: url("../imagenes/YOGA/Y3.jpg");
@@ -102,7 +102,10 @@
 }
 .header .logo {
   display: flex;
-  width: 75%;
+  width: 100%;
+}
+.header .navegador {
+  width: 100%;
 }
 .header .navegador__links {
   transition: 0.3s;

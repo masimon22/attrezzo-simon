@@ -1,17 +1,23 @@
-.header{
+.header {
     display: flex;
     justify-content: space-around;
-    .logo{
+
+    .logo {
         display: flex;
-        width: 75%;
+        width: 100%;
     }
-    .navegador__links{
+
+    .navegador {
+        width: 100%;
+
+    }
+   
+
+    .navegador__links {
         transition: 0.3s;
-        &:hover{
+
+        &:hover {
             color: #ea5e5e;
         }
     }
 }
-
-
-
