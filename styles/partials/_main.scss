@@ -1,62 +1,80 @@
-
-.encabezado{
+.encabezado {
     display: flex;
     background-image: map-get($colores, colorEncabezado);
     justify-content: center;
-    .encabezado__imagen{
+
+    .encabezado__imagen {
         display: flex;
         width: 60%;
     }
 }
 
-.tarjetas{
+.titulo {
+    display: flex;
+    max-width: 1440px;
+    margin: auto;
+    justify-content: flex-end;
+    margin-right: 5rem;
+
+}
+
+.tarjetas {
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-    .tarjetas-arq{
+
+    .tarjetas-arq {
         display: flex;
         margin-bottom: 10px;
-        &:hover{opacity: 70%;}
+
+        &:hover {
+            opacity: 70%;
+        }
     }
-    .tarjetas__attrezzo{
+
+    .tarjetas__attrezzo {
         display: flex;
         background-color: rgb(241, 248, 246);
-        
+
     }
 }
 
 
 
-.principal__texto{
+.principal__texto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 2em;
-    gap: 1rem;
-    
-    .principal__parrafo{
+
+
+    .principal__parrafo {
         font-size: $letra-mediana;
         width: 60vw;
+
     }
 }
-.galeria{
-    #galeria-titulo{
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 5rem;
-    }
-    .fotos{
+
+.galeria {
+
+    .fotos {
         @extend %fotosDefault;
         border: 1px solid;
-        
+
     }
-    .galeria-imagenes{
+
+    .galeria-imagenes {
         margin-top: 2rem;
-        &:hover{transform: scale(1.4);}
+
+        &:hover {
+            transform: scale(1.4);
+        }
+
         transition: $transicion;
     }
-    .parallax{
+
+    .parallax {
         background-image: url("../imagenes/YOGA/Y3.jpg");
         height: 50vh;
         width: 100%;
@@ -65,16 +83,47 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .parallax2{
+
+    .parallax2 {
         @extend .parallax;
-        background-image: url("../imagenes/YOGA/Y5.jpg");
-    
+        background-image: url("../imagenes/MUNDO/M29.jpg");
+
     }
 
 }
+
 @media only screen and (max-device-width: 992px) {
-    .parallax {
-      display: none;
+    .titulo {
+        max-width: 600px;
+        margin: auto;
+        justify-content: center;
     }
-   
-  }
+
+    .parallax {
+        display: none;
+    }
+
+    .galeria {
+
+        .galeria-titulo {
+            max-width: 600px;
+            margin: auto;
+            justify-content: center;
+
+        }
+
+        .fotos {
+            justify-content: center;
+        }
+
+    }
+
+
+    .principal__texto {
+        max-width: 600px;
+        margin: auto;
+        margin-top: 1rem;
+
+    }
+
+}
