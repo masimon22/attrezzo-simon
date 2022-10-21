@@ -1,18 +1,7 @@
-.encabezado {
-    display: flex;
-    background-image: map-get($colores, colorEncabezado);
-    justify-content: center;
-
-    .encabezado__imagen {
-        display: flex;
-        width: 60%;
-    }
-}
-
 .titulo {
     display: flex;
     max-width: 1440px;
-    margin: auto;
+    margin-bottom: 20px;
     justify-content: flex-end;
     margin-right: 5rem;
 
@@ -35,24 +24,35 @@
     .tarjetas__attrezzo {
         display: flex;
         background-color: rgb(241, 248, 246);
-
     }
 }
 
 
 
-.principal__texto {
+.container {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-top: 2em;
+    margin-top: 20px;
 
 
-    .principal__parrafo {
-        font-size: $letra-mediana;
-        width: 60vw;
+    .principal__texto {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70vw;
 
+
+        .principal__parrafo {
+            font-size: $letra-mediana;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: rgb(255, 255, 255);
+            padding: 30px;
+            border-radius: 10px;
+            @media (max-width: 600px){
+                font-size: $letra-chica;
+            }
+
+        }
     }
 }
 
@@ -93,6 +93,8 @@
 }
 
 @media only screen and (max-device-width: 992px) {
+
+   
     .titulo {
         max-width: 600px;
         margin: auto;
@@ -103,27 +105,5 @@
         display: none;
     }
 
-    .galeria {
-
-        .galeria-titulo {
-            max-width: 600px;
-            margin: auto;
-            justify-content: center;
-
-        }
-
-        .fotos {
-            justify-content: center;
-        }
-
-    }
-
-
-    .principal__texto {
-        max-width: 600px;
-        margin: auto;
-        margin-top: 1rem;
-
-    }
 
 }
