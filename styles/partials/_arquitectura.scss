@@ -1,0 +1,50 @@
+main {
+    display: flex;
+    flex-direction: column;
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+
+        .arquitectura{
+            
+            img{
+                width: 100%;
+                margin: auto;
+            }
+        }
+
+        .principal__texto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1440px;
+            margin: auto;
+
+            .principal__parrafo {
+                align-items: center;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+       
+        .principal__texto {
+            max-width: 900px;
+            margin: auto;
+            width: 100%;
+
+
+            .principal__parrafo {
+                text-align: center;
+            }
+        }
+
+    }
+
+}
